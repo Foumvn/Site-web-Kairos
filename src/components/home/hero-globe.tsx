@@ -82,6 +82,34 @@ export function HeroGlobe() {
     setIsDragging(false);
   };
 
+  const handleTouchStart = (event: React.TouchEvent) => {
+    setIsDragging(true);
+    const rect = svgRef.current?.getBoundingClientRect();
+    if (rect && event.touches.length > 0) {
+      setLastMouse([event.touches[0].clientX - rect.left, event.touches[0].clientY - rect.top]);
+    }
+  };
+
+  const handleTouchMove = (event: React.TouchEvent) => {
+    if (!isDragging || event.touches.length === 0) return;
+    const rect = svgRef.current?.getBoundingClientRect();
+    if (!rect) return;
+
+    const currentMouse = [
+      event.touches[0].clientX - rect.left,
+      event.touches[0].clientY - rect.top,
+    ];
+    const dx = currentMouse[0] - lastMouse[0];
+    const dy = currentMouse[1] - lastMouse[1];
+
+    const sensitivity = 0.5;
+    setRotation((prev) => [
+      prev[0] + dx * sensitivity,
+      Math.max(-90, Math.min(90, prev[1] - dy * sensitivity)),
+    ]);
+    setLastMouse(currentMouse);
+  };
+
   // Initialize and update visualization
   useEffect(() => {
     if (!svgRef.current || worldData.length === 0) return;
@@ -187,12 +215,15 @@ export function HeroGlobe() {
         <svg
           ref={svgRef}
           viewBox={`0 0 ${width} ${height}`}
-          className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing"
+          className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing touch-none"
           preserveAspectRatio="xMidYMid meet"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleMouseUp}
         />
 
         {/* Grid overlay */}

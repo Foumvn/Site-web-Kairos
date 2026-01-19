@@ -30,13 +30,12 @@ export default function Home() {
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight font-[var(--font-brand)] text-white">
-                Building{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500">Digital Systems</span>{" "}
-                for Modern Organizations.
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500">Systèmes numériques</span>{" "}
+                pour organisations modernes.
               </h1>
 
               <p className="text-lg text-slate-400 max-w-xl leading-relaxed">
-                Kairos specializes in implementing and creating comprehensive digital information systems for enterprises and organizations. 
+                Kairos specializes in implementing and creating comprehensive digital information systems for enterprises and organizations.
                 We transform your business processes through innovative technology solutions.
               </p>
 
@@ -102,7 +101,7 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed">
-                Experience the expertise of Kairos. We design, implement, and maintain comprehensive digital information systems 
+                Experience the expertise of Kairos. We design, implement, and maintain comprehensive digital information systems
                 that streamline operations, secure critical data, and enhance organizational productivity.
               </p>
             </div>
