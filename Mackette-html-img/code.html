@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kairos - Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #0ea5e9;
+            --secondary: #6366f1;
+            --dark-bg: #0f172a;
+            --darker-bg: #020617;
+            --accent: #38bdf8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6, .brand-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .dropdown-content {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+        .group:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }.globe-container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #1e293b, #000);
+            box-shadow: inset -20px -20px 50px rgba(0,0,0,0.8), 0 0 50px rgba(14, 165, 233, 0.2);
+            overflow: hidden;
+        }
+        .globe-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(#38bdf81a 1px, transparent 1px),
+                linear-gradient(90deg, #38bdf81a 1px, transparent 1px);
+            background-size: 40px 40px;
+            border-radius: 50%;
+            transform: rotate(-15deg);
+        }
+        .dot {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #38bdf8;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #38bdf8;
+        }
+    </style>
+</head>
+<body class="bg-[var(--dark-bg)] min-h-screen text-slate-200">
+<header class="fixed w-full top-0 z-50 bg-[var(--darker-bg)]/80 backdrop-blur-lg border-b border-slate-800">
+<div class="max-w-[1440px] mx-auto px-6 h-20 flex items-center justify-between">
+<a class="flex items-center gap-2 group" href="#">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all">
+                    K
+                </div>
+<span class="text-2xl font-bold brand-font text-white tracking-tight">KAIROS</span>
+</a>
+<nav class="hidden xl:flex items-center gap-1 h-full">
+<div class="group h-full flex items-center relative px-4 cursor-pointer">
+<button class="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                        Products
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="dropdown-content absolute top-[calc(100%+1px)] left-[-100px] w-[600px] bg-[var(--darker-bg)] border border-slate-800 rounded-xl p-6 shadow-2xl grid grid-cols-2 gap-x-8 gap-y-4">
+<div class="col-span-2 pb-2 border-b border-slate-800 mb-2">
+<span class="text-xs font-semibold text-[var(--primary)] uppercase tracking-wider">Our Solutions</span>
+</div>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">dataset</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">Kairos-KM</div>
+<div class="text-xs text-slate-400">Knowledge Management System</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">travel_explore</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">Kairos-Web Scan</div>
+<div class="text-xs text-slate-400">Intelligent Web Monitoring</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">factory</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">Kairos-Document Factory</div>
+<div class="text-xs text-slate-400">High-volume doc processing</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">mail</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">Kairos-courrier</div>
+<div class="text-xs text-slate-400">Digital Mailroom Automation</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">shield</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">Optimum GRC</div>
+<div class="text-xs text-slate-400">Governance, Risk &amp; Compliance</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">hub</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">WithIn</div>
+<div class="text-xs text-slate-400">Internal Collaboration Hub</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">edit_document</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">K-Office Writter</div>
+<div class="text-xs text-slate-400">Secure Document Editor</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">scanner</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">K-Scanner</div>
+<div class="text-xs text-slate-400">Capture &amp; Indexing</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">ink_pen</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">K-Esign</div>
+<div class="text-xs text-slate-400">Electronic Signature</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">medical_services</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">Heka</div>
+<div class="text-xs text-slate-400">Healthcare Solutions</div>
+</div>
+</a>
+<a class="flex items-start gap-3 p-2 hover:bg-slate-800/50 rounded-lg transition-colors group/item" href="#">
+<span class="material-symbols-outlined text-[var(--primary)] mt-0.5">smart_toy</span>
+<div>
+<div class="text-sm font-semibold text-white group-hover/item:text-[var(--accent)]">Lucas</div>
+<div class="text-xs text-slate-400">AI Assistant</div>
+</div>
+</a>
+</div>
+</div>
+<div class="group h-full flex items-center relative px-4 cursor-pointer">
+<button class="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                        Services
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="dropdown-content absolute top-[calc(100%+1px)] left-[-50px] w-[400px] bg-[var(--darker-bg)] border border-slate-800 rounded-xl p-4 shadow-2xl flex flex-col gap-2">
+<a class="block p-3 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Custom Application Development</a>
+<a class="block p-3 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Application Support &amp; Maintenance</a>
+<a class="block p-3 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Document Management</a>
+<a class="block p-3 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Strategic Watch &amp; Economic Intelligence</a>
+<a class="block p-3 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Training</a>
+</div>
+</div>
+<div class="group h-full flex items-center relative px-4 cursor-pointer">
+<button class="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                        Resources
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="dropdown-content absolute top-[calc(100%+1px)] left-[-20px] w-[250px] bg-[var(--darker-bg)] border border-slate-800 rounded-xl p-4 shadow-2xl flex flex-col gap-2">
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Blog</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Case Studies</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Webinars</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Masterclass</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Videos</a>
+</div>
+</div>
+<div class="group h-full flex items-center relative px-4 cursor-pointer">
+<button class="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                        Company
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="dropdown-content absolute top-[calc(100%+1px)] right-0 w-[350px] bg-[var(--darker-bg)] border border-slate-800 rounded-xl p-4 shadow-2xl flex flex-col gap-2">
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">About Us</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">What's New?</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Our Partners / Become a Distributor</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Client References</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Recruitment</a>
+<a class="block p-2 rounded-lg hover:bg-slate-800/50 hover:text-[var(--accent)] transition-colors text-sm" href="#">Contact</a>
+</div>
+</div>
+<div class="h-full flex items-center px-4">
+<a class="text-sm font-medium text-slate-300 hover:text-[var(--accent)] transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">diversity_3</span>
+                        Kairos Community
+                    </a>
+</div>
+</nav>
+<button class="xl:hidden p-2 text-slate-300 hover:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden xl:flex items-center gap-4">
+<a class="px-5 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-sm font-medium transition-all" href="#">Sign In</a>
+<a class="px-5 py-2.5 rounded-full bg-[var(--primary)] hover:bg-sky-600 text-white text-sm font-medium shadow-lg shadow-sky-500/20 transition-all" href="#">Get a Demo</a>
+</div>
+</div>
+</header>
+<main class="relative pt-20">
+<section class="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+<div class="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[20%] right-[10%] w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+<div class="flex flex-col gap-8 z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-700 bg-slate-800/50 w-fit">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<span class="text-xs font-medium text-slate-300">New: Lucas AI Assistant v2.0 Released</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+                    Shaping the <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)]">Future</span> of Information.
+                </h1>
+<p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+                    Kairos empowers organizations with cutting-edge document management, AI-driven insights, and secure collaboration tools. Unlock the true potential of your data.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<a class="px-8 py-4 rounded-full bg-white text-[var(--darker-bg)] font-bold text-center hover:bg-slate-200 transition-colors flex items-center justify-center gap-2" href="#">
+                        Explore Solutions
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="px-8 py-4 rounded-full border border-slate-700 bg-slate-800/30 backdrop-blur-sm text-white font-medium text-center hover:bg-slate-800 transition-colors" href="#">
+                        Watch Showreel
+                    </a>
+</div>
+<div class="flex items-center gap-6 mt-8 pt-8 border-t border-slate-800/50">
+<div class="flex -space-x-3">
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-[var(--dark-bg)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-5fezGAOzkH-kYOgHHC0Qs0K5lnoDGCjgvEliJxAWjLi8a7HwuyIampSwo2mH-Aj-iV2v0WT-AKbRsF-edrDDfdRwY7tVcYb2HiSUXsO-gme2JpYyxomATHGnzOtkllZ-4axJSsGPBAPmGX2oW8Ru9AGqJjVHS3EVnLj5ufDP7nZXli4Z_2KcSmJo2VZrfQFJeM_ms5DbceT9hoypONczdn5Em_fFEIhDeR-T21-XRKq-AEIzX-YA92jZeI85rNHPFG9qDVjIsJA"/>
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-[var(--dark-bg)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2wDh9f9ZTGJcQktpbc63mcxypkHUxxWyPz6l2lfqD2dG_GzvtXk2y7_97PtSdbqTMnFw93VB8NUmFSKCbtQL5hwsBaXiJx02IKX_pvUPPMUOeGWEO_RK-T5dVVKZh2Y8ebW07fMPNmtmNc4eE3U13Akt4DeoCi5x5IwbihaI0l7Ikso9A4MWiR4j01wEYVhP9vNkK6ZrB-hE3MoBZTYjEpq-L6tUMcvpNOPAwDxNWI53zUrAPlh4_yC4oEL2g-wavAORglS0L8iI"/>
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-[var(--dark-bg)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg2g6B17ZwiqtWhufh4Ul4fxaMoF0jcQg5alliUU9u_AU8TKEgER3macoAdP2Z-Ii9KVrMMowZvnfG_H7g1Eg23rwyLu-yYhM26ulUiCLfOEAjEhjL0zOTG4LTLVbbOLVGSv_88sTlCtmouYQe7hdGzBx9AtP1DUfCcb0-_SSDD8G4mZp8Lu7YPO1bqY0zBCurTcDTXWXPXtV3lv1WvgX0fiRTvLI97HxtTCUklEr5TM-h4f2dW5X9jgO2mUjmBM3mSNsQp5AZBjY"/>
+<div class="w-10 h-10 rounded-full border-2 border-[var(--dark-bg)] bg-slate-700 flex items-center justify-center text-xs font-bold">+2k</div>
+</div>
+<div class="text-sm text-slate-400">
+                        Trusted by <span class="text-white font-semibold">2,000+</span> companies worldwide
+                    </div>
+</div>
+</div>
+<div class="relative flex items-center justify-center h-[600px] lg:h-[800px] perspective-1000">
+<div class="globe-container flex items-center justify-center">
+<div class="globe-grid"></div>
+<div class="dot" style="top: 30%; left: 40%;"></div>
+<div class="dot" style="top: 50%; left: 70%;"></div>
+<div class="dot" style="top: 70%; left: 20%;"></div>
+<div class="dot" style="top: 20%; left: 60%;"></div>
+<div class="absolute top-[20%] right-[10%] bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700 shadow-2xl z-20 animate-bounce" style="animation-duration: 3s;">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-1.5 rounded-lg bg-green-500/20 text-green-400">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+</div>
+<span class="text-xs font-semibold text-slate-200">Data Synced</span>
+</div>
+<div class="h-1 w-24 bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-green-500 w-[80%]"></div>
+</div>
+</div>
+<div class="absolute bottom-[25%] left-[5%] bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700 shadow-2xl z-20 animate-bounce" style="animation-duration: 4s; animation-delay: 1s;">
+<div class="flex items-center gap-3">
+<div class="p-1.5 rounded-lg bg-blue-500/20 text-blue-400">
+<span class="material-symbols-outlined text-sm">shield</span>
+</div>
+<div>
+<div class="text-xs font-semibold text-slate-200">System Secure</div>
+<div class="text-[10px] text-slate-400">Last check: 2m ago</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative bg-[var(--darker-bg)] border-t border-slate-800">
+<div class="absolute top-0 right-0 w-[400px] h-[400px] bg-sky-600/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-600/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-6 relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="text-3xl md:text-5xl font-bold mb-6 brand-font text-white">
+                Intelligent Solutions for <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)]">Modern Business</span>
+</h2>
+<p class="text-slate-400 text-lg leading-relaxed">
+                Experience the power of Kairos. Our comprehensive suite of tools is designed to streamline your workflow, secure your data, and amplify your team's productivity across the enterprise.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-[var(--primary)]/30 hover:bg-slate-800/60 transition-all duration-300 hover:-translate-y-1 shadow-2xl shadow-transparent hover:shadow-[var(--primary)]/5">
+<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-[var(--primary)] to-blue-600 flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-white text-[28px]">psychology</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white brand-font group-hover:text-[var(--accent)] transition-colors">AI-Powered Insights</h3>
+<p class="text-slate-400 leading-relaxed text-sm">
+                    Leverage advanced machine learning algorithms to automatically extract, classify, and unlock actionable intelligence from your unstructured data.
+                </p>
+</div>
+<div class="group p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-[var(--primary)]/30 hover:bg-slate-800/60 transition-all duration-300 hover:-translate-y-1 shadow-2xl shadow-transparent hover:shadow-[var(--primary)]/5">
+<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-[var(--secondary)] flex items-center justify-center mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-white text-[28px]">encrypted</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white brand-font group-hover:text-[var(--accent)] transition-colors">Military-Grade Security</h3>
+<p class="text-slate-400 leading-relaxed text-sm">
+                    Protect your sensitive information with state-of-the-art encryption, blockchain-backed audit trails, and continuous threat monitoring compliance.
+                </p>
+</div>
+<div class="group p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-[var(--primary)]/30 hover:bg-slate-800/60 transition-all duration-300 hover:-translate-y-1 shadow-2xl shadow-transparent hover:shadow-[var(--primary)]/5">
+<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-400 to-emerald-600 flex items-center justify-center mb-6 shadow-lg shadow-teal-500/20 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-white text-[28px]">hub</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white brand-font group-hover:text-[var(--accent)] transition-colors">Seamless Integration</h3>
+<p class="text-slate-400 leading-relaxed text-sm">
+                    Connect effortlessly with your existing software ecosystem through our robust API architecture, unifying your data silos into a single source of truth.
+                </p>
+</div>
+<div class="group p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-[var(--primary)]/30 hover:bg-slate-800/60 transition-all duration-300 hover:-translate-y-1 shadow-2xl shadow-transparent hover:shadow-[var(--primary)]/5">
+<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-white text-[28px]">speed</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white brand-font group-hover:text-[var(--accent)] transition-colors">Real-Time Performance</h3>
+<p class="text-slate-400 leading-relaxed text-sm">
+                    Empower your teams to work together with zero latency. Our high-performance infrastructure ensures your documents and data are available instantly, anywhere.
+                </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body></html>
