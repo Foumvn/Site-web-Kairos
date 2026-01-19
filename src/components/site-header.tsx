@@ -10,6 +10,7 @@ import {
   FilePenLine,
   FileSearch,
   FolderKanban,
+  Globe,
   GraduationCap,
   Handshake,
   HeartPulse,
@@ -27,6 +28,7 @@ import {
   Sparkles,
   Users,
   Video,
+  Check,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -42,25 +44,156 @@ type NavItem =
   | { type: "link"; title: string; href: string; icon?: React.ReactNode }
   | { type: "dropdown"; title: string; widthClass: string; sections: { title?: string; items: Array<{ title: string; description?: string; href: string; icon?: React.ReactNode }> }[] };
 
+// Import language context
+import { useLanguage, LANGUAGES, type Language } from "@/lib/i18n";
+
+function LanguageSwitcher({ variant }: { variant: HeaderVariant }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const dropdownRef = React.useRef<HTMLDivElement>(null);
+
+  // Use global language context
+  const { language: currentLang, setLanguage, t } = useLanguage();
+
+  const isDark = variant === "dark";
+
+  // Close dropdown when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleSelectLang = (lang: Language) => {
+    setLanguage(lang);
+    setIsOpen(false);
+  };
+
+  return (
+    <div className="relative" ref={dropdownRef}>
+      {/* Trigger Button */}
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className={cn(
+          "group flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-all duration-300",
+          "border backdrop-blur-sm",
+          isDark
+            ? "bg-slate-800/50 border-slate-700/50 text-slate-200 hover:bg-slate-700/70 hover:border-slate-600"
+            : "bg-white/80 border-gray-200 text-gray-700 hover:bg-gray-50 hover:border-gray-300 dark:bg-gray-800/80 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-700/80",
+          isOpen && (isDark ? "bg-slate-700/70 border-slate-600" : "bg-gray-50 border-gray-300")
+        )}
+        aria-label={t("header.languageLabel")}
+        aria-expanded={isOpen}
+      >
+        <Globe className={cn(
+          "h-4 w-4 transition-all duration-300",
+          isOpen ? "rotate-12 scale-110" : "group-hover:rotate-12",
+          isDark ? "text-primary" : "text-primary"
+        )} />
+        <span className="hidden sm:inline-flex items-center gap-1.5">
+          <span className="text-base">{currentLang.flag}</span>
+          <span>{currentLang.code.toUpperCase()}</span>
+        </span>
+        <span className="sm:hidden text-base">{currentLang.flag}</span>
+        <ChevronDown className={cn(
+          "h-3.5 w-3.5 transition-all duration-300 opacity-60",
+          isOpen && "rotate-180"
+        )} />
+      </button>
+
+      {/* Dropdown Menu */}
+      <div
+        className={cn(
+          "absolute top-full right-0 mt-2 w-48 origin-top-right rounded-xl border p-1.5 shadow-2xl z-50",
+          "transition-all duration-300 ease-out",
+          isDark
+            ? "bg-slate-900/95 border-slate-700/50 backdrop-blur-xl shadow-black/30"
+            : "bg-white/95 border-gray-200 backdrop-blur-xl shadow-gray-200/50 dark:bg-gray-900/95 dark:border-gray-700",
+          isOpen
+            ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
+            : "opacity-0 -translate-y-2 scale-95 pointer-events-none"
+        )}
+      >
+        {/* Glow effect for dark mode */}
+        {isDark && (
+          <div className="absolute -inset-px bg-gradient-to-br from-primary/10 via-transparent to-teal-500/10 rounded-xl -z-10" />
+        )}
+
+        <div className="space-y-0.5">
+          {LANGUAGES.map((lang, index) => (
+            <button
+              key={lang.code}
+              onClick={() => handleSelectLang(lang)}
+              className={cn(
+                "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200",
+                "group/item",
+                currentLang.code === lang.code
+                  ? isDark
+                    ? "bg-primary/20 text-primary"
+                    : "bg-primary/10 text-primary"
+                  : isDark
+                    ? "text-slate-300 hover:bg-slate-800/80 hover:text-white"
+                    : "text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+              )}
+              style={{
+                animationDelay: isOpen ? `${index * 50}ms` : "0ms",
+              }}
+            >
+              <span
+                className={cn(
+                  "text-xl transition-transform duration-200",
+                  "group-hover/item:scale-110"
+                )}
+              >
+                {lang.flag}
+              </span>
+              <span className="flex-1 text-left">{lang.name}</span>
+              {currentLang.code === lang.code && (
+                <Check className={cn(
+                  "h-4 w-4 transition-all duration-200",
+                  "text-primary"
+                )} />
+              )}
+            </button>
+          ))}
+        </div>
+
+        {/* Footer hint */}
+        <div className={cn(
+          "mt-2 pt-2 border-t text-[10px] text-center",
+          isDark ? "border-slate-800 text-slate-500" : "border-gray-100 text-gray-400"
+        )}>
+          <Globe className="inline h-3 w-3 mr-1 opacity-50" />
+          {t("header.languageLabel")}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const products: NavItem = {
   type: "dropdown",
-  title: "Products",
+  title: "Produits",
   widthClass: "w-[600px]",
   sections: [
     {
-      title: "Our Solutions",
+      title: "Nos Solutions",
       items: [
-        { title: "Kairos-KM", description: "Knowledge Management System", href: "#", icon: <FolderKanban className="h-5 w-5" /> },
-        { title: "Kairos-Web Scan", description: "Intelligent Web Monitoring", href: "#", icon: <FileSearch className="h-5 w-5" /> },
-        { title: "Kairos-Document Factory", description: "High-volume doc processing", href: "#", icon: <ClipboardList className="h-5 w-5" /> },
-        { title: "Kairos-courrier", description: "Digital Mailroom Automation", href: "#", icon: <Mail className="h-5 w-5" /> },
-        { title: "Optimum GRC", description: "Governance, Risk & Compliance", href: "#", icon: <Shield className="h-5 w-5" /> },
-        { title: "WithIn", description: "Internal Collaboration Hub", href: "#", icon: <Users className="h-5 w-5" /> },
-        { title: "K-Office Writer", description: "Secure Document Editor", href: "#", icon: <FilePenLine className="h-5 w-5" /> },
-        { title: "K-Scanner", description: "Capture & Indexing", href: "#", icon: <Scan className="h-5 w-5" /> },
-        { title: "K-Esign", description: "Electronic Signature", href: "#", icon: <PenTool className="h-5 w-5" /> },
-        { title: "Heka", description: "Healthcare Solutions", href: "#", icon: <HeartPulse className="h-5 w-5" /> },
-        { title: "Lucas", description: "AI Assistant", href: "#", icon: <Sparkles className="h-5 w-5" /> },
+        { title: "Kairos-KM", description: "Système de Gestion des Connaissances", href: "#", icon: <FolderKanban className="h-5 w-5" /> },
+        { title: "Kairos-Web Scan", description: "Veille Web Intelligente", href: "#", icon: <FileSearch className="h-5 w-5" /> },
+        { title: "Kairos-Document Factory", description: "Traitement documentaire de masse", href: "#", icon: <ClipboardList className="h-5 w-5" /> },
+        { title: "Kairos-courrier", description: "Automatisation Courrier Numérique", href: "#", icon: <Mail className="h-5 w-5" /> },
+        { title: "Optimum GRC", description: "Gouvernance, Risques & Conformité", href: "#", icon: <Shield className="h-5 w-5" /> },
+        { title: "WithIn", description: "Plateforme Collaboration Interne", href: "#", icon: <Users className="h-5 w-5" /> },
+        { title: "K-Office Writer", description: "Éditeur de Documents Sécurisé", href: "#", icon: <FilePenLine className="h-5 w-5" /> },
+        { title: "K-Scanner", description: "Capture & Indexation", href: "#", icon: <Scan className="h-5 w-5" /> },
+        { title: "K-Esign", description: "Signature Électronique", href: "#", icon: <PenTool className="h-5 w-5" /> },
+        { title: "Heka", description: "Solutions Santé", href: "#", icon: <HeartPulse className="h-5 w-5" /> },
+        { title: "Lucas", description: "Assistant IA", href: "#", icon: <Sparkles className="h-5 w-5" /> },
       ],
     },
   ],
@@ -73,11 +206,11 @@ const services: NavItem = {
   sections: [
     {
       items: [
-        { title: "Custom Application Development", href: "/services/custom-application-development" },
-        { title: "Application Support & Maintenance", href: "/services/application-support-maintenance" },
-        { title: "Document Management", href: "/services/document-management" },
-        { title: "Strategic Watch & Economic Intelligence", href: "/services/strategic-watch-economic-intelligence" },
-        { title: "Training", href: "/services/training", icon: <GraduationCap className="h-4 w-4" /> },
+        { title: "Développement d'Applications Sur Mesure", href: "/services/custom-application-development" },
+        { title: "Support & Maintenance Applicative", href: "/services/application-support-maintenance" },
+        { title: "Gestion Documentaire", href: "/services/document-management" },
+        { title: "Veille Stratégique & Intelligence Éco", href: "/services/strategic-watch-economic-intelligence" },
+        { title: "Formation", href: "/services/training", icon: <GraduationCap className="h-4 w-4" /> },
       ],
     },
   ],
@@ -85,16 +218,16 @@ const services: NavItem = {
 
 const resources: NavItem = {
   type: "dropdown",
-  title: "Resources",
+  title: "Ressources",
   widthClass: "w-[250px]",
   sections: [
     {
       items: [
         { title: "Blog", href: "#", icon: <Newspaper className="h-4 w-4" /> },
-        { title: "Case Studies", href: "#", icon: <MonitorCheck className="h-4 w-4" /> },
-        { title: "Webinars", href: "#", icon: <Video className="h-4 w-4" /> },
+        { title: "Études de Cas", href: "#", icon: <MonitorCheck className="h-4 w-4" /> },
+        { title: "Webinaires", href: "#", icon: <Video className="h-4 w-4" /> },
         { title: "Masterclass", href: "#", icon: <GraduationCap className="h-4 w-4" /> },
-        { title: "Videos", href: "#", icon: <Video className="h-4 w-4" /> },
+        { title: "Vidéos", href: "#", icon: <Video className="h-4 w-4" /> },
       ],
     },
   ],
@@ -102,16 +235,16 @@ const resources: NavItem = {
 
 const company: NavItem = {
   type: "dropdown",
-  title: "Company",
+  title: "Entreprise",
   widthClass: "w-[350px]",
   sections: [
     {
       items: [
-        { title: "About Us", href: "#", icon: <Home className="h-4 w-4" /> },
-        { title: "What's New?", href: "#", icon: <Sparkles className="h-4 w-4" /> },
-        { title: "Our Partners / Become a Distributor", href: "#", icon: <Handshake className="h-4 w-4" /> },
-        { title: "Client References", href: "#", icon: <BarChart3 className="h-4 w-4" /> },
-        { title: "Recruitment", href: "#", icon: <Users className="h-4 w-4" /> },
+        { title: "À propos", href: "#", icon: <Home className="h-4 w-4" /> },
+        { title: "Quoi de neuf ?", href: "#", icon: <Sparkles className="h-4 w-4" /> },
+        { title: "Nos Partenaires / Devenir Distributeur", href: "#", icon: <Handshake className="h-4 w-4" /> },
+        { title: "Références Clients", href: "#", icon: <BarChart3 className="h-4 w-4" /> },
+        { title: "Recrutement", href: "#", icon: <Users className="h-4 w-4" /> },
         { title: "Contact", href: "/contact", icon: <Phone className="h-4 w-4" /> },
       ],
     },
@@ -123,15 +256,15 @@ const desktopNav: NavItem[] = [
   services,
   resources,
   company,
-  { type: "link", title: "Kairos Community", href: "#", icon: <Users className="h-4 w-4" /> },
+  { type: "link", title: "Communauté Kairos", href: "#", icon: <Users className="h-4 w-4" /> },
 ];
 
 const lightNavLinks: NavLink[] = [
-  { title: "Platform", href: "#" },
+  { title: "Plateforme", href: "#" },
   { title: "Solutions", href: "/solutions" },
-  { title: "Partners", href: "#" },
-  { title: "Case Studies", href: "#" },
-  { title: "Resources", href: "#" },
+  { title: "Partenaires", href: "#" },
+  { title: "Études de Cas", href: "#" },
+  { title: "Ressources", href: "#" },
 ];
 
 function Dropdown({
@@ -510,29 +643,23 @@ export function SiteHeader({ variant = "dark" }: { variant?: HeaderVariant }) {
         <div className={cn("hidden items-center gap-4", isDarkVariant ? "xl:flex" : "md:flex")}>
           {isDarkVariant ? (
             <>
+              <LanguageSwitcher variant={variant} />
               <Button
                 variant="secondary"
                 className="rounded-full bg-slate-800/80 hover:bg-slate-700 border border-slate-700/50 text-slate-100 hover:border-slate-600 transition-all duration-300 hover:shadow-lg hover:shadow-slate-700/20"
               >
-                Sign In
+                Connexion
               </Button>
-              <Button className="group rounded-full bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-300 hover:scale-105">
-                Get a Demo
+              <Button className="group rounded-full bg-gradient-to-r from-primary to-teal-500 hover:from-teal-500 hover:to-primary text-slate-900 font-semibold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all duration-300 hover:scale-105">
+                Demander une démo
                 <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
               </Button>
             </>
           ) : (
             <>
-              <button
-                type="button"
-                className="flex items-center gap-1 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                aria-label="Toggle theme"
-              >
-                EN <ChevronDown className="h-4 w-4 opacity-70" />
-              </button>
+              <LanguageSwitcher variant={variant} />
               <Button className="rounded bg-primary hover:bg-teal-400 text-gray-900 font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/40">
-                Free Demo
+                Démo Gratuite
               </Button>
             </>
           )}
@@ -600,23 +727,23 @@ export function SiteHeader({ variant = "dark" }: { variant?: HeaderVariant }) {
             {isDarkVariant ? (
               <div className="space-y-3">
                 <Button className="w-full rounded-full bg-slate-800/80 hover:bg-slate-700 border border-slate-700/50 hover:border-slate-600 transition-all duration-300">
-                  Sign In
+                  Connexion
                 </Button>
-                <Button className="w-full rounded-full bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-300">
-                  Get a Demo →
+                <Button className="w-full rounded-full bg-gradient-to-r from-primary to-teal-500 hover:from-teal-500 hover:to-primary text-slate-900 font-semibold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all duration-300">
+                  Demander une démo →
                 </Button>
               </div>
             ) : (
               <div className="space-y-2">
                 <Button className="w-full rounded bg-primary hover:bg-teal-400 text-gray-900 font-semibold">
-                  Free Demo
+                  Démo Gratuite
                 </Button>
                 <Button
                   variant="outline"
                   className="w-full"
                   onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 >
-                  Toggle theme
+                  Changer de thème
                 </Button>
               </div>
             )}

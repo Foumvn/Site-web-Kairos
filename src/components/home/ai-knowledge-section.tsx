@@ -2,8 +2,11 @@
 
 import { Bot, Brain, Zap, Share2, TrendingUp, FolderOpen, Cpu, ArrowLeftRight, ChevronRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useTranslation } from "@/lib/i18n";
 
 export function AIKnowledgeSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative py-24 bg-white overflow-hidden">
       {/* Background gradient */}
@@ -13,12 +16,12 @@ export function AIKnowledgeSection() {
         {/* Header */}
         <div className="mb-16">
           <span className="text-cyan-500 font-bold tracking-widest text-sm uppercase mb-4 block">
-            KAIROS SOLUTIONS
+            {t("aiKnowledge.eyebrow")}
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-4xl text-gray-900 font-[var(--font-brand)]">
-            Transform your organization with <br className="hidden md:block" />
+            {t("aiKnowledge.title")} <br className="hidden md:block" />
             <span className="relative inline-block">
-              digital information systems
+              {t("aiKnowledge.titleHighlight")}
               <svg
                 className="absolute w-full h-3 -bottom-1 left-0 text-cyan-500"
                 fill="none"
@@ -32,7 +35,7 @@ export function AIKnowledgeSection() {
                 />
               </svg>
             </span>{" "}
-            tailored to your business needs
+            {t("aiKnowledge.titleEnd")}
           </h1>
         </div>
 
@@ -47,9 +50,9 @@ export function AIKnowledgeSection() {
                   <div className="w-16 h-16 rounded-2xl bg-teal-900/10 text-cyan-500 border border-cyan-500/30 flex items-center justify-center mb-4">
                     <FolderOpen className="h-9 w-9" />
                   </div>
-                  <h3 className="text-cyan-500 font-bold text-lg mb-2">LEGACY</h3>
+                  <h3 className="text-cyan-500 font-bold text-lg mb-2">{t("aiKnowledge.legacy")}</h3>
                   <p className="text-xs md:text-sm text-center text-gray-500">
-                    Existing Systems<br />& Infrastructure
+                    {t("aiKnowledge.legacyDesc")}
                   </p>
                 </div>
 
@@ -58,9 +61,9 @@ export function AIKnowledgeSection() {
                   <div className="w-16 h-16 rounded-2xl bg-blue-900/10 text-blue-500 border border-blue-500/30 flex items-center justify-center mb-4">
                     <Cpu className="h-9 w-9" />
                   </div>
-                  <h3 className="text-blue-500 font-bold text-lg mb-2">DIGITAL</h3>
+                  <h3 className="text-blue-500 font-bold text-lg mb-2">{t("aiKnowledge.digital")}</h3>
                   <p className="text-xs md:text-sm text-center text-gray-500">
-                    Modern Information<br />Systems
+                    {t("aiKnowledge.digitalDesc")}
                   </p>
                 </div>
 
@@ -198,27 +201,26 @@ export function AIKnowledgeSection() {
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-700" />
               <CardContent className="p-0 relative z-10">
                 <h2 className="text-3xl font-bold mb-6 text-gray-900 leading-tight font-[var(--font-brand)]">
-                  Your digital transformation <br />
+                  {t("aiKnowledge.cardTitle")} <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
-                    starts here
+                    {t("aiKnowledge.cardTitleHighlight")}
                   </span>
                 </h2>
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  We design and implement comprehensive digital information systems that transform how your organization 
-                  manages data, processes, and workflows. Our solutions are tailored to your specific business needs.
+                  {t("aiKnowledge.cardDescription")}
                 </p>
                 <ul className="space-y-3 mb-10 font-mono text-sm text-gray-700">
                   <li className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-                    Custom System Architecture
+                    {t("aiKnowledge.feature1")}
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-                    Enterprise Integration
+                    {t("aiKnowledge.feature2")}
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-                    Scalable Infrastructure
+                    {t("aiKnowledge.feature3")}
                   </li>
                 </ul>
                 <a
@@ -226,7 +228,7 @@ export function AIKnowledgeSection() {
                   href="#"
                 >
                   <span className="border-b border-cyan-500/50 group-hover/link:border-cyan-500 pb-0.5 transition-all">
-                    Learn more about our solutions
+                    {t("aiKnowledge.learnMore")}
                   </span>
                   <ChevronRight className="ml-1 h-5 w-5 group-hover/link:translate-x-1 transition-transform" />
                 </a>
@@ -238,6 +240,7 @@ export function AIKnowledgeSection() {
     </section>
   );
 }
+
 
 function FloatingIcon({
   icon,

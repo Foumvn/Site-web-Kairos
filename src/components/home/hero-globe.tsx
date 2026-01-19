@@ -4,7 +4,6 @@ import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import { feature } from "topojson-client";
-import { CheckCircle2, ShieldCheck } from "lucide-react";
 
 interface GeoFeature {
   type: string;
@@ -243,26 +242,7 @@ export function HeroGlobe() {
         <Dot style={{ top: "20%", left: "60%" }} />
 
         {/* Floating cards */}
-        <FloatingCard
-          className="absolute top-[20%] right-[10%] animate-bounce z-20"
-          style={{ animationDuration: "3s" }}
-          icon={<CheckCircle2 className="h-4 w-4" />}
-          iconClassName="bg-green-500/20 text-green-400"
-          title="Data Synced"
-        >
-          <div className="h-1 w-24 bg-slate-700 rounded-full overflow-hidden">
-            <div className="h-full bg-green-500 w-[80%]" />
-          </div>
-        </FloatingCard>
 
-        <FloatingCard
-          className="absolute bottom-[25%] left-[5%] animate-bounce z-20"
-          style={{ animationDuration: "4s", animationDelay: "1s" }}
-          icon={<ShieldCheck className="h-4 w-4" />}
-          iconClassName="bg-blue-500/20 text-blue-400"
-          title="System Secure"
-          subtitle="Last check: 2m ago"
-        />
       </div>
     </div>
   );
@@ -277,37 +257,4 @@ function Dot({ style }: { style: React.CSSProperties }) {
   );
 }
 
-function FloatingCard({
-  className,
-  style,
-  icon,
-  iconClassName,
-  title,
-  subtitle,
-  children,
-}: {
-  className?: string;
-  style?: React.CSSProperties;
-  icon: React.ReactNode;
-  iconClassName: string;
-  title: string;
-  subtitle?: string;
-  children?: React.ReactNode;
-}) {
-  return (
-    <div
-      className={[
-        "bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700 shadow-2xl",
-        className ?? "",
-      ].join(" ")}
-      style={style}
-    >
-      <div className="flex items-center gap-3 mb-2">
-        <div className={["p-1.5 rounded-lg", iconClassName].join(" ")}>{icon}</div>
-        <span className="text-xs font-semibold text-slate-200">{title}</span>
-      </div>
-      {subtitle ? <div className="text-[10px] text-slate-400">{subtitle}</div> : null}
-      {children ? <div className="mt-2">{children}</div> : null}
-    </div>
-  );
-}
+

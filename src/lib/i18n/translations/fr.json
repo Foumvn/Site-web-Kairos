@@ -1,0 +1,381 @@
+{
+    "meta": {
+        "title": "Kairos - Systèmes d'Information Numériques",
+        "description": "Kairos — Mise en œuvre et création de systèmes d'information numériques pour les entreprises."
+    },
+    "header": {
+        "products": "Produits",
+        "services": "Services",
+        "resources": "Ressources",
+        "company": "Entreprise",
+        "community": "Communauté Kairos",
+        "signIn": "Connexion",
+        "getDemo": "Demander une démo",
+        "freeDemo": "Démo gratuite",
+        "languageLabel": "Langue du site"
+    },
+    "hero": {
+        "badge": "Nouveau : Solutions de Transformation Digitale disponibles",
+        "title": "Maîtrisez votre",
+        "titleHighlight": "Transformation Numérique",
+        "description": "Kairos conçoit et met en œuvre des systèmes d'information numériques complets qui transforment la façon dont votre organisation gère les données, les processus et les flux de travail.",
+        "exploreSolutions": "Explorer les solutions",
+        "watchShowreel": "Voir la démo",
+        "trustedBy": "Plus de 2 000 entreprises nous font confiance"
+    },
+    "features": {
+        "sectionTitle": "Solutions Numériques pour l'Excellence",
+        "sectionDescription": "Des solutions numériques complètes conçues pour améliorer l'efficacité opérationnelle et stimuler la croissance.",
+        "items": {
+            "customDev": {
+                "title": "Développement de Systèmes sur Mesure",
+                "description": "Solutions d'architecture personnalisées conçues pour répondre à vos besoins spécifiques."
+            },
+            "integration": {
+                "title": "Intégration d'Entreprise",
+                "description": "Connexion fluide de vos systèmes et flux de travail existants pour des opérations unifiées."
+            },
+            "security": {
+                "title": "Architecture de Sécurité",
+                "description": "Protection de niveau entreprise pour vos données critiques et votre infrastructure système."
+            },
+            "automation": {
+                "title": "Automatisation des Processus",
+                "description": "Automatisation intelligente des flux de travail pour optimiser les opérations."
+            },
+            "analytics": {
+                "title": "Analyse de Données",
+                "description": "Insights avancés et tableaux de bord pour une prise de décision basée sur les données."
+            },
+            "cloud": {
+                "title": "Solutions Cloud",
+                "description": "Infrastructure cloud évolutive et sécurisée pour les besoins modernes."
+            }
+        }
+    },
+    "stats": {
+        "organizations": "Organisations servies",
+        "systems": "Systèmes déployés",
+        "uptime": "Disponibilité système",
+        "countries": "Pays couverts"
+    },
+    "testimonials": {
+        "title": "Confiance de Leaders de l'Industrie",
+        "description": "Découvrez ce que nos clients disent de leur expérience avec Kairos.",
+        "items": [
+            {
+                "quote": "Kairos a mis en place un système d'information numérique complet qui a transformé nos opérations. La solution sur mesure correspond parfaitement à notre flux de travail et a considérablement amélioré notre efficacité.",
+                "author": "Sarah Johnson",
+                "role": "CTO, TechCorp"
+            },
+            {
+                "quote": "L'architecture de sécurité qu'ils ont conçue est exceptionnelle. Nous sommes confiants sachant que nos données critiques sont protégées par des mesures de sécurité de niveau entreprise.",
+                "author": "Michael Chen",
+                "role": "Directeur Sécurité, FinanceHub"
+            },
+            {
+                "quote": "L'intégration des systèmes a été transparente. Ils ont connecté tous nos logiciels d'entreprise existants en quelques semaines. La mise en œuvre a été fluide et le retour sur investissement immédiat.",
+                "author": "Emily Rodriguez",
+                "role": "Responsable Opérations, GlobalInc"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Prêt à transformer votre organisation ?",
+        "description": "Rejoignez des centaines d'organisations qui utilisent déjà Kairos pour mettre en œuvre des systèmes d'information numériques complets.",
+        "startFree": "Commencer gratuitement",
+        "scheduleDemo": "Prendre rendez-vous"
+    },
+    "footer": {
+        "description": "Autonomiser les organisations grâce à la mise en œuvre de systèmes d'information numériques complets.",
+        "newsletter": "Newsletter",
+        "emailPlaceholder": "Votre email",
+        "products": "Produits",
+        "allProducts": "Tous les produits",
+        "company": "Entreprise",
+        "aboutUs": "À propos",
+        "caseStudies": "Études de cas",
+        "careers": "Carrières",
+        "resources": "Ressources",
+        "webinars": "Webinaires",
+        "community": "Communauté",
+        "address": "Adresse",
+        "phone": "Téléphone",
+        "email": "Email",
+        "allRightsReserved": "Tous droits réservés."
+    },
+    "aiKnowledge": {
+        "eyebrow": "SOLUTIONS KAIROS",
+        "title": "Transformez votre organisation avec",
+        "titleHighlight": "des systèmes numériques",
+        "titleEnd": "adaptés à vos besoins",
+        "legacy": "EXISTANT",
+        "legacyDesc": "Systèmes & Infra Actuels",
+        "digital": "NUMÉRIQUE",
+        "digitalDesc": "Systèmes d'Information Modernes",
+        "cardTitle": "Votre transformation numérique",
+        "cardTitleHighlight": "commence ici",
+        "cardDescription": "Nous concevons et mettons en œuvre des systèmes d'information numériques complets qui transforment la façon dont votre organisation gère les données, les processus et les flux de travail. Nos solutions sont adaptées à vos besoins spécifiques.",
+        "feature1": "Architecture Système Sur Mesure",
+        "feature2": "Intégration d'Entreprise",
+        "feature3": "Infrastructure Évolutive",
+        "learnMore": "En savoir plus sur nos solutions"
+    },
+    "methodology": {
+        "eyebrow": "NOTRE PROCESSUS",
+        "title": "MÉTHODOLOGIE DE",
+        "titleHighlight": "GESTION DE PROJETS",
+        "description": "Une approche structurée et adaptable pour garantir le succès de vos initiatives numériques, quelle que soit leur taille.",
+        "phases": [
+            {
+                "id": "phase-1",
+                "title": "PHASE 1 - DÉMARRAGE",
+                "objective": "S'assurer qu'on lance le bon projet avec les bonnes personnes",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Comprendre le contexte",
+                            "details": [
+                                "Pourquoi ce projet maintenant ?",
+                                "Quels problèmes il résout ?",
+                                "Qu'est-ce qui se passe dans l'entreprise et autour qui peut influencer le projet ?"
+                            ]
+                        },
+                        {
+                            "title": "Identifier qui est concerné",
+                            "details": [
+                                "Qui va utiliser les résultats ?",
+                                "Qui peut bloquer ou aider ?",
+                                "Qui décide et qui finance ?"
+                            ]
+                        },
+                        {
+                            "title": "Définir les objectifs clairement (SMART)",
+                            "details": [
+                                "Spécifique, Mesurable, Atteignable, Réaliste, Temporel.",
+                                "Ex: 'Réduire les délais de 30% d'ici déc. 2026' vs 'Améliorer les livraisons'."
+                            ]
+                        },
+                        {
+                            "title": "Vérifier la faisabilité & les risques",
+                            "details": [
+                                "Avons-nous les compétences, le budget, le temps ?",
+                                "Les technologies existent-elles ?",
+                                "Qu'est-ce qui pourrait faire échouer le projet ?"
+                            ]
+                        },
+                        {
+                            "title": "Créer la charte du projet (1-2 pages)",
+                            "details": [
+                                "Sponsor, budget estimé, périmètre, date de fin souhaitée."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Charte projet signée",
+                        "Liste des parties prenantes",
+                        "Étude de faisabilité validée"
+                    ],
+                    "decision": "Le sponsor + la direction du département concerné",
+                    "whatToDo": "Ce qu'il faut faire"
+                }
+            },
+            {
+                "id": "phase-2",
+                "title": "PHASE 2 - PLANIFICATION",
+                "objective": "Définir comment réaliser le projet sans se noyer dans les détails",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Monter l'équipe et clarifier les rôles (RACI)",
+                            "details": [
+                                "R = Responsable (fait le travail)",
+                                "A = Autorité (valide et décide)",
+                                "C = Consulté (donne son avis)",
+                                "I = Informé (reçoit l'info)"
+                            ]
+                        },
+                        {
+                            "title": "Découper le projet",
+                            "details": [
+                                "Diviser en étapes ou lots de travail.",
+                                "Identifier les dépendances et fixer les jalons importants."
+                            ]
+                        },
+                        {
+                            "title": "Estimer les besoins & mesurer le succès",
+                            "details": [
+                                "Budget, personnes, matériel.",
+                                "Définir 3 à 5 indicateurs clés (KPIs)."
+                            ]
+                        },
+                        {
+                            "title": "Organiser la communication & gérer les changements",
+                            "details": [
+                                "Qui informe qui, quand et comment ?",
+                                "Processus de validation des changements (coût, délai, qualité)."
+                            ]
+                        },
+                        {
+                            "title": "Mettre en place les instances",
+                            "details": [
+                                "Comité de pilotage (Sponsor, Directeurs) : Mensuel/Bimensual.",
+                                "Réunion d'équipe : Hebdomadaire."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Planning détaillé",
+                        "Budget détaillé",
+                        "Matrice RACI",
+                        "Tableau de bord",
+                        "Plan de communication"
+                    ],
+                    "decision": "Comité de pilotage ou sponsor",
+                    "whatToDo": "Ce qu'il faut faire"
+                }
+            },
+            {
+                "id": "phase-3",
+                "title": "PHASE 3 - EXÉCUTION",
+                "objective": "Produire les résultats en gardant le contrôle",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Travailler par étapes courtes",
+                            "details": [
+                                "Cycles de 2-4 semaines.",
+                                "Produire du concret et valider régulièrement avec les utilisateurs."
+                            ]
+                        },
+                        {
+                            "title": "Suivre les indicateurs (KPIs)",
+                            "details": [
+                                "Vérification hebdomadaire.",
+                                "🟢 Vert (OK), 🟠 Orange (Risque), 🔴 Rouge (Action immédiate)."
+                            ]
+                        },
+                        {
+                            "title": "Gérer les problèmes & conflits",
+                            "details": [
+                                "Communiquer de façon transparente.",
+                                "Escalade : Chef de projet (48h) → Sponsor (1 semaine) → Copil (2 semaines)."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Produit/service selon planning",
+                        "Comptes-rendus",
+                        "Tableaux de bord à jour"
+                    ],
+                    "decision": "Points de contrôle réguliers",
+                    "whatToDo": "Ce qu'il faut faire"
+                }
+            },
+            {
+                "id": "phase-4",
+                "title": "PHASE 4 - FINALISATION",
+                "objective": "Terminer proprement et transférer aux utilisateurs",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Valider & Former",
+                            "details": [
+                                "Tests avec vrais utilisateurs.",
+                                "Formation et documentation simple."
+                            ]
+                        },
+                        {
+                            "title": "Déployer & Transférer",
+                            "details": [
+                                "Déploiement progressif (pilote puis généralisation).",
+                                "Passation formelle aux opérations/maintenance."
+                            ]
+                        },
+                        {
+                            "title": "Célébrer",
+                            "details": [
+                                "Reconnaître le travail de l'équipe et clore le projet."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Recette signée",
+                        "Doc utilisateur & technique",
+                        "PV de transfert"
+                    ],
+                    "decision": "Sponsor + représentant des utilisateurs",
+                    "whatToDo": "Ce qu'il faut faire"
+                }
+            },
+            {
+                "id": "phase-5",
+                "title": "PHASE 5 - CAPITALISATION",
+                "objective": "Apprendre de l'expérience et mesurer la valeur",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Revue post-projet",
+                            "details": [
+                                "Qu'est-ce qui a bien/mal fonctionné ?",
+                                "Quelles leçons pour la suite ?"
+                            ]
+                        },
+                        {
+                            "title": "Mesurer les bénéfices & Archiver",
+                            "details": [
+                                "ROI réel vs prévu (3-6 mois après).",
+                                "Archivage de la charte, planning final, budget."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Rapport de clôture",
+                        "Fiche leçons apprises",
+                        "Mesure du ROI"
+                    ],
+                    "decision": "Clôture administrative",
+                    "whatToDo": "Ce qu'il faut faire"
+                }
+            }
+        ],
+        "glossaryTitle": "Glossaire",
+        "glossarySubtitle": "Quelques termes clés pour bien comprendre notre méthodologie et parler le même langage.",
+        "deliverablesTitle": "Livrables",
+        "decisionTitle": "Qui décide ?",
+        "glossaryItems": [
+            {
+                "term": "Charte projet",
+                "def": "Document court (1-2 pages) qui officialise le lancement."
+            },
+            {
+                "term": "COPIL (Comité de pilotage)",
+                "def": "Décideurs validant les grandes orientations."
+            },
+            {
+                "term": "Jalon",
+                "def": "Point de contrôle important pour vérifier la trajectoire."
+            },
+            {
+                "term": "Livrable",
+                "def": "Résultat concret produit (doc, logiciel, etc.)."
+            },
+            {
+                "term": "Matrice RACI",
+                "def": "Qui fait quoi (Responsable, Autorité, Consulté, Informé)."
+            },
+            {
+                "term": "Partie prenante",
+                "def": "Personne/groupe impacté ou pouvant influencer le projet."
+            },
+            {
+                "term": "ROI",
+                "def": "Retour sur investissement (Gain vs Coût)."
+            },
+            {
+                "term": "Sponsor",
+                "def": "Personne de haut niveau qui porte et finance le projet."
+            }
+        ]
+    }
+}

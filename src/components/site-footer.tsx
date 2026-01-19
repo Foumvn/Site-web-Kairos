@@ -5,11 +5,12 @@ import { Facebook, Linkedin, Twitter, Mail, MapPin, Phone, Send } from "lucide-r
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Logo, LogoFallback } from "@/components/logo";
+import { Logo } from "@/components/logo";
+import { useTranslation } from "@/lib/i18n";
 
 export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" }) {
+  const { t } = useTranslation();
   const isDark = variant === "dark";
-  const isLight = variant === "light";
 
   return (
     <footer
@@ -31,8 +32,7 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                 isDark ? "text-slate-400" : "text-gray-600 dark:text-gray-400",
               )}
             >
-              Empowering organizations by implementing and creating comprehensive digital information systems 
-              for enterprises and organizations.
+              {t("footer.description")}
             </p>
 
             {/* Newsletter */}
@@ -43,12 +43,12 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                   isDark ? "text-slate-200" : "text-gray-900 dark:text-white",
                 )}
               >
-                Newsletter
+                {t("footer.newsletter")}
               </h4>
               <div className="flex gap-2">
                 <Input
                   type="email"
-                  placeholder="Your email"
+                  placeholder={t("footer.emailPlaceholder")}
                   className={cn(
                     "h-10",
                     isDark
@@ -60,9 +60,7 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                   size="icon"
                   className={cn(
                     "h-10 w-10 shrink-0",
-                    isDark
-                      ? "bg-sky-500 hover:bg-sky-600 text-white"
-                      : "bg-cyan-500 hover:bg-cyan-600 text-white",
+                    "bg-primary hover:opacity-90 text-white",
                   )}
                 >
                   <Send className="h-4 w-4" />
@@ -79,15 +77,15 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                 isDark ? "text-slate-200" : "text-gray-900 dark:text-white",
               )}
             >
-              Products
+              {t("footer.products")}
             </h4>
             <ul className="space-y-3">
               {[
                 { title: "Kairos-KM", href: "#" },
                 { title: "Kairos-Web Scan", href: "#" },
                 { title: "Document Factory", href: "#" },
-                { title: "Lucas AI Assistant", href: "#" },
-                { title: "All Products", href: "#" },
+                { title: "Assistant IA Lucas", href: "#" },
+                { title: t("footer.allProducts"), href: "#" },
               ].map((item) => (
                 <li key={item.title}>
                   <Link
@@ -95,8 +93,8 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                     className={cn(
                       "text-sm hover:underline transition-colors",
                       isDark
-                        ? "text-slate-400 hover:text-sky-400"
-                        : "text-gray-600 dark:text-gray-400 hover:text-cyan-600 dark:hover:text-cyan-400",
+                        ? "text-slate-400 hover:text-primary"
+                        : "text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary",
                     )}
                   >
                     {item.title}
@@ -114,14 +112,14 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                 isDark ? "text-slate-200" : "text-gray-900 dark:text-white",
               )}
             >
-              Company
+              {t("footer.company")}
             </h4>
             <ul className="space-y-3">
               {[
-                { title: "About Us", href: "/about" },
-                { title: "Services", href: "/services" },
-                { title: "Case Studies", href: "#" },
-                { title: "Careers", href: "#" },
+                { title: t("footer.aboutUs"), href: "/about" },
+                { title: t("header.services"), href: "/services" },
+                { title: t("footer.caseStudies"), href: "#" },
+                { title: t("footer.careers"), href: "#" },
                 { title: "Contact", href: "/contact" },
               ].map((item) => (
                 <li key={item.title}>
@@ -130,8 +128,8 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                     className={cn(
                       "text-sm hover:underline transition-colors",
                       isDark
-                        ? "text-slate-400 hover:text-sky-400"
-                        : "text-gray-600 dark:text-gray-400 hover:text-cyan-600 dark:hover:text-cyan-400",
+                        ? "text-slate-400 hover:text-primary"
+                        : "text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary",
                     )}
                   >
                     {item.title}
@@ -149,15 +147,15 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                 isDark ? "text-slate-200" : "text-gray-900 dark:text-white",
               )}
             >
-              Resources
+              {t("footer.resources")}
             </h4>
             <ul className="space-y-3">
               {[
                 { title: "Blog", href: "/blog" },
                 { title: "Documentation", href: "#" },
-                { title: "Webinars", href: "#" },
+                { title: t("footer.webinars"), href: "#" },
                 { title: "Support", href: "#" },
-                { title: "Community", href: "#" },
+                { title: t("footer.community"), href: "#" },
               ].map((item) => (
                 <li key={item.title}>
                   <Link
@@ -165,8 +163,8 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                     className={cn(
                       "text-sm hover:underline transition-colors",
                       isDark
-                        ? "text-slate-400 hover:text-sky-400"
-                        : "text-gray-600 dark:text-gray-400 hover:text-cyan-600 dark:hover:text-cyan-400",
+                        ? "text-slate-400 hover:text-primary"
+                        : "text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary",
                     )}
                   >
                     {item.title}
@@ -186,11 +184,11 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
         >
           <div className="flex items-start gap-3">
             <MapPin
-              className={cn("h-5 w-5 shrink-0 mt-0.5", isDark ? "text-sky-400" : "text-cyan-500")}
+              className={cn("h-5 w-5 shrink-0 mt-0.5", "text-primary")}
             />
             <div>
               <p className={cn("text-sm font-medium mb-1", isDark ? "text-slate-200" : "text-gray-900 dark:text-white")}>
-                Address
+                {t("footer.address")}
               </p>
               <p className={cn("text-sm", isDark ? "text-slate-400" : "text-gray-600 dark:text-gray-400")}>
                 100 Smith Street<br />
@@ -200,18 +198,18 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
           </div>
 
           <div className="flex items-start gap-3">
-            <Phone className={cn("h-5 w-5 shrink-0 mt-0.5", isDark ? "text-sky-400" : "text-cyan-500")} />
+            <Phone className={cn("h-5 w-5 shrink-0 mt-0.5", "text-primary")} />
             <div>
               <p className={cn("text-sm font-medium mb-1", isDark ? "text-slate-200" : "text-gray-900 dark:text-white")}>
-                Phone
+                {t("footer.phone")}
               </p>
               <a
                 href="tel:+1555000000"
                 className={cn(
                   "text-sm hover:underline transition-colors",
                   isDark
-                    ? "text-slate-400 hover:text-sky-400"
-                    : "text-gray-600 dark:text-gray-400 hover:text-cyan-600",
+                    ? "text-slate-400 hover:text-primary"
+                    : "text-gray-600 dark:text-gray-400 hover:text-primary",
                 )}
               >
                 +1 (555) 000-0000
@@ -220,18 +218,18 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
           </div>
 
           <div className="flex items-start gap-3">
-            <Mail className={cn("h-5 w-5 shrink-0 mt-0.5", isDark ? "text-sky-400" : "text-cyan-500")} />
+            <Mail className={cn("h-5 w-5 shrink-0 mt-0.5", "text-primary")} />
             <div>
               <p className={cn("text-sm font-medium mb-1", isDark ? "text-slate-200" : "text-gray-900 dark:text-white")}>
-                Email
+                {t("footer.email")}
               </p>
               <a
                 href="mailto:hello@kairos.ai"
                 className={cn(
                   "text-sm hover:underline transition-colors",
                   isDark
-                    ? "text-slate-400 hover:text-sky-400"
-                    : "text-gray-600 dark:text-gray-400 hover:text-cyan-600",
+                    ? "text-slate-400 hover:text-primary"
+                    : "text-gray-600 dark:text-gray-400 hover:text-primary",
                 )}
               >
                 hello@kairos.ai
@@ -248,7 +246,7 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
           )}
         >
           <p className={cn("text-sm", isDark ? "text-slate-500" : "text-gray-500 dark:text-gray-400")}>
-            © {new Date().getFullYear()} Kairos Solutions. All rights reserved.
+            © {new Date().getFullYear()} Kairos Solutions. {t("footer.allRightsReserved")}
           </p>
 
           {/* Social Links */}
@@ -265,8 +263,8 @@ export function SiteFooter({ variant = "dark" }: { variant?: "dark" | "light" })
                 className={cn(
                   "h-9 w-9 rounded-lg flex items-center justify-center transition-all hover:scale-110",
                   isDark
-                    ? "bg-slate-800/50 hover:bg-slate-700 text-slate-400 hover:text-sky-400"
-                    : "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 hover:text-cyan-600 dark:hover:text-cyan-400",
+                    ? "bg-slate-800/50 hover:bg-slate-700 text-slate-400 hover:text-primary"
+                    : "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary",
                 )}
               >
                 <social.icon className="h-4 w-4" />

@@ -1,0 +1,364 @@
+{
+    "meta": {
+        "title": "Kairos - Soluciones Digitales para la Excelencia",
+        "description": "Kairos diseña e implementa sistemas de información digital completos para transformar su organización."
+    },
+    "header": {
+        "products": "Productos",
+        "services": "Servicios",
+        "resources": "Recursos",
+        "company": "Empresa",
+        "community": "Comunidad Kairos",
+        "signIn": "Iniciar Sesión",
+        "getDemo": "Solicitar Demo",
+        "freeDemo": "Demo Gratis",
+        "languageLabel": "Idioma del sitio"
+    },
+    "hero": {
+        "badge": "Nuevo: Soluciones de Transformación Digital Disponibles",
+        "title": "Domine su",
+        "titleHighlight": "Transformación Digital",
+        "description": "Kairos diseña e implementa sistemas de información digital completos que transforman la forma en que su organización gestiona datos, procesos y flujos de trabajo.",
+        "exploreSolutions": "Explorar Soluciones",
+        "watchShowreel": "Ver Demo",
+        "trustedBy": "Más de 2.000 empresas confían en nosotros"
+    },
+    "features": {
+        "sectionTitle": "Soluciones Digitales para la Excelencia Empresarial",
+        "sectionDescription": "Soluciones digitales integrales diseñadas para mejorar la eficiencia operativa e impulsar el crecimiento empresarial.",
+        "items": {
+            "customDev": {
+                "title": "Desarrollo de Sistemas Personalizados",
+                "description": "Soluciones de arquitectura a medida diseñadas para cumplir con sus requisitos comerciales específicos."
+            },
+            "integration": {
+                "title": "Integración Empresarial",
+                "description": "Conexión perfecta de sus sistemas y flujos de trabajo existentes para operaciones unificadas."
+            },
+            "security": {
+                "title": "Arquitectura de Seguridad",
+                "description": "Protección de nivel empresarial para sus datos críticos e infraestructura del sistema."
+            },
+            "automation": {
+                "title": "Automatización de Procesos",
+                "description": "Automatización inteligente de flujos de trabajo para optimizar operaciones y reducir tareas manuales."
+            },
+            "analytics": {
+                "title": "Análisis de Datos",
+                "description": "Información avanzada y paneles para la toma de decisiones basada en datos."
+            },
+            "cloud": {
+                "title": "Soluciones en la Nube",
+                "description": "Infraestructura en la nube escalable y segura para las necesidades empresariales modernas."
+            }
+        }
+    },
+    "stats": {
+        "organizations": "Organizaciones Atendidas",
+        "systems": "Sistemas Implementados",
+        "uptime": "Tiempo de Actividad",
+        "countries": "Países Atendidos"
+    },
+    "testimonials": {
+        "title": "Confianza de Líderes de la Industri",
+        "description": "Vea lo que nuestros clientes dicen sobre su experiencia con Kairos."
+    },
+    "cta": {
+        "title": "¿Listo para Transformar su Organización?",
+        "description": "Únase a cientos de organizaciones que ya usan Kairos para implementar sistemas de información digital completos.",
+        "startFree": "Comenzar Gratis",
+        "scheduleDemo": "Programar Demo"
+    },
+    "footer": {
+        "description": "Empoderando organizaciones mediante la implementación de sistemas de información digital completos.",
+        "newsletter": "Boletín",
+        "emailPlaceholder": "Su email",
+        "products": "Productos",
+        "allProducts": "Todos los Productos",
+        "company": "Empresa",
+        "aboutUs": "Sobre Nosotros",
+        "caseStudies": "Casos de Estudio",
+        "careers": "Carreras",
+        "resources": "Recursos",
+        "webinars": "Seminarios Web",
+        "community": "Comunidad",
+        "address": "Dirección",
+        "phone": "Teléfono",
+        "email": "Email",
+        "allRightsReserved": "Todos los derechos reservados."
+    },
+    "aiKnowledge": {
+        "eyebrow": "SOLUCIONES KAIROS",
+        "title": "Transforme su organización con",
+        "titleHighlight": "sistemas digitales",
+        "titleEnd": "adaptados a sus necesidades",
+        "legacy": "EXISTENTE",
+        "legacyDesc": "Sistemas e Infraestructura Actuales",
+        "digital": "DIGITAL",
+        "digitalDesc": "Sistemas de Información Modernos",
+        "cardTitle": "Su transformación digital",
+        "cardTitleHighlight": "comienza aquí",
+        "cardDescription": "Diseñamos e implementamos sistemas de información digital completos que transforman la forma en que su organización gestiona datos, procesos y flujos de trabajo. Nuestras soluciones están adaptadas a sus necesidades específicas.",
+        "feature1": "Arquitectura de Sistema Personalizada",
+        "feature2": "Integración Empresarial",
+        "feature3": "Infraestructura Escalable",
+        "learnMore": "Más información sobre nuestras soluciones"
+    },
+    "methodology": {
+        "eyebrow": "NUESTRO PROCESO",
+        "title": "GESTIÓN DE PROYECTOS",
+        "titleHighlight": "METODOLOGÍA",
+        "description": "Un enfoque estructurado y adaptable para garantizar el éxito de sus iniciativas digitales, independientemente de su tamaño.",
+        "phases": [
+            {
+                "id": "phase-1",
+                "title": "FASE 1 - INICIO",
+                "objective": "Asegurarse de lanzar el proyecto correcto con las personas adecuadas",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Comprender el contexto",
+                            "details": [
+                                "¿Por qué este proyecto ahora?",
+                                "¿Qué problemas resuelve?",
+                                "¿Qué está pasando en la empresa y alrededor que pueda influir en el proyecto?"
+                            ]
+                        },
+                        {
+                            "title": "Identificar a los interesados",
+                            "details": [
+                                "¿Quién usará los resultados?",
+                                "¿Quién puede bloquear o ayudar?",
+                                "¿Quién decide y quién financia?"
+                            ]
+                        },
+                        {
+                            "title": "Definir objetivos claros (SMART)",
+                            "details": [
+                                "Específicos, Mensurables, Alcanzables, Realistas, Temporales.",
+                                "Ej: 'Reducir plazos en un 30% para dic. 2026' vs 'Mejorar las entregas'."
+                            ]
+                        },
+                        {
+                            "title": "Verificar factibilidad y riesgos",
+                            "details": [
+                                "¿Tenemos las competencias, el presupuesto, el tiempo?",
+                                "¿Existen las tecnologías?",
+                                "¿Qué podría hacer que el proyecto falle?"
+                            ]
+                        },
+                        {
+                            "title": "Crear la carta del proyecto (1-2 páginas)",
+                            "details": [
+                                "Patrocinador, presupuesto estimado, alcance, fecha de finalización deseada."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Carta del proyecto firmada",
+                        "Lista de interesados",
+                        "Estudio de factibilidad validado"
+                    ],
+                    "decision": "El patrocinador + la dirección del departamento",
+                    "whatToDo": "Lo que hay que hacer"
+                }
+            },
+            {
+                "id": "phase-2",
+                "title": "FASE 2 - PLANIFICACIÓN",
+                "objective": "Definir cómo realizar el proyecto sin ahogarse en los detalles",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Montar el equipo y aclarar roles (RACI)",
+                            "details": [
+                                "R = Responsable",
+                                "A = Autoridad",
+                                "C = Consultado",
+                                "I = Informado"
+                            ]
+                        },
+                        {
+                            "title": "Dividir el proyecto",
+                            "details": [
+                                "Dividir en pasos o paquetes de trabajo.",
+                                "Identificar dependencias y fijar hitos importantes."
+                            ]
+                        },
+                        {
+                            "title": "Estimar necesidades y medir éxito",
+                            "details": [
+                                "Presupuesto, personas, material.",
+                                "Definir de 3 a 5 indicadores clave (KPIs)."
+                            ]
+                        },
+                        {
+                            "title": "Organizar comunicación y gestionar cambios",
+                            "details": [
+                                "¿Quién informa a quién, cuándo y cómo?",
+                                "Proceso de validación de cambios (costo, plazo, calidad)."
+                            ]
+                        },
+                        {
+                            "title": "Establecer la gobernanza",
+                            "details": [
+                                "Comité de seguimiento (Patrocinador, Directores): Mensual/Bimensual.",
+                                "Reunión de equipo: Semanal."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Planificación detallada",
+                        "Presupuesto detallado",
+                        "Matriz RACI",
+                        "Tablero de control",
+                        "Plan de comunicación"
+                    ],
+                    "decision": "Comité de seguimiento o patrocinador",
+                    "whatToDo": "Lo que hay que hacer"
+                }
+            },
+            {
+                "id": "phase-3",
+                "title": "FASE 3 - REALIZACIÓN",
+                "objective": "Producir resultados manteniendo el control",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Trabajar en etapas cortas",
+                            "details": [
+                                "Ciclos de 2-4 semanas.",
+                                "Producir algo concreto y validar regularmente con los usuarios."
+                            ]
+                        },
+                        {
+                            "title": "Seguir los indicadores (KPIs)",
+                            "details": [
+                                "Verificación semanal.",
+                                "🟢 Verde (OK), 🟠 Naranja (Riesgo), 🔴 Rojo (Acción inmediata)."
+                            ]
+                        },
+                        {
+                            "title": "Gestionar problemas y conflictos",
+                            "details": [
+                                "Comunicar de forma transparente.",
+                                "Escalamiento: Jefe de proyecto (48h) → Patrocinador (1 sem) → Copil (2 sem)."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Producto/servicio según planificación",
+                        "Actas de reunión",
+                        "Tableros de control actualizados"
+                    ],
+                    "decision": "Puntos de control regulares",
+                    "whatToDo": "Lo que hay que hacer"
+                }
+            },
+            {
+                "id": "phase-4",
+                "title": "FASE 4 - FINALIZACIÓN",
+                "objective": "Terminar limpiamente y transferir a los usuarios",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Validar y Formar",
+                            "details": [
+                                "Pruebas con usuarios reales.",
+                                "Formación y documentación sencilla."
+                            ]
+                        },
+                        {
+                            "title": "Desplegar y Transferir",
+                            "details": [
+                                "Despliegue progresivo (piloto y luego generalización).",
+                                "Entrega formal a operaciones/mantenimiento."
+                            ]
+                        },
+                        {
+                            "title": "Celebrar",
+                            "details": [
+                                "Reconocer el trabajo del equipo y cerrar el proyecto."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Aceptación firmada",
+                        "Doc. usuario y técnica",
+                        "Acta de transferencia"
+                    ],
+                    "decision": "Patrocinador + representante de usuarios",
+                    "whatToDo": "Lo que hay que hacer"
+                }
+            },
+            {
+                "id": "phase-5",
+                "title": "FASE 5 - CAPITALIZACIÓN",
+                "objective": "Aprender de la experiencia y medir el valor",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Revisión post-proyecto",
+                            "details": [
+                                "¿Qué funcionó bien/mal?",
+                                "¿Qué lecciones para el futuro?"
+                            ]
+                        },
+                        {
+                            "title": "Medir beneficios y Archivar",
+                            "details": [
+                                "ROI real vs previsto (3-6 meses después).",
+                                "Archivado de la carta, planificación final, presupuesto."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Informe de cierre",
+                        "Ficha de lecciones aprendidas",
+                        "Medición del ROI"
+                    ],
+                    "decision": "Cierre administrativo",
+                    "whatToDo": "Lo que hay que hacer"
+                }
+            }
+        ],
+        "glossaryTitle": "Glosario",
+        "glossarySubtitle": "Algunos términos clave para entender bien nuestra metodología y hablar el mismo idioma.",
+        "deliverablesTitle": "Entregables",
+        "decisionTitle": "¿Quién decide?",
+        "glossaryItems": [
+            {
+                "term": "Carta del proyecto",
+                "def": "Documento corto (1-2 páginas) que oficializa el lanzamiento."
+            },
+            {
+                "term": "COPIL (Comité de seguimiento)",
+                "def": "Decisores que validan las grandes orientaciones."
+            },
+            {
+                "term": "Hito",
+                "def": "Punto de control importante para verificar la trayectoria."
+            },
+            {
+                "term": "Entregable",
+                "def": "Resultado concreto producido (doc, software, etc.)."
+            },
+            {
+                "term": "Matriz RACI",
+                "def": "Quién hace qué (Responsable, Autoridad, Consultado, Informado)."
+            },
+            {
+                "term": "Interesado",
+                "def": "Persona/grupo impactado o que puede influir en el proyecto."
+            },
+            {
+                "term": "ROI",
+                "def": "Retorno sobre la inversión (Ganancia vs Costo)."
+            },
+            {
+                "term": "Patrocinador",
+                "def": "Persona de alto nivel que impulsa y financia el proyecto."
+            }
+        ]
+    }
+}

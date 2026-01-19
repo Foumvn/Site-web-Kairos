@@ -1,0 +1,381 @@
+{
+    "meta": {
+        "title": "Kairos - Digital Information Systems",
+        "description": "Kairos — Implementation and creation of digital information systems for enterprises and organizations."
+    },
+    "header": {
+        "products": "Products",
+        "services": "Services",
+        "resources": "Resources",
+        "company": "Company",
+        "community": "Kairos Community",
+        "signIn": "Sign In",
+        "getDemo": "Request a Demo",
+        "freeDemo": "Free Demo",
+        "languageLabel": "Site language"
+    },
+    "hero": {
+        "badge": "New: Digital Transformation Solutions Available",
+        "title": "Master Your",
+        "titleHighlight": "Digital Transformation",
+        "description": "Kairos designs and implements comprehensive digital information systems that transform how your organization manages data, processes, and workflows.",
+        "exploreSolutions": "Explore Solutions",
+        "watchShowreel": "Watch Demo",
+        "trustedBy": "Trusted by over 2,000 companies"
+    },
+    "features": {
+        "sectionTitle": "Digital Solutions for Excellence",
+        "sectionDescription": "Comprehensive digital solutions designed to improve operational efficiency and drive business growth.",
+        "items": {
+            "customDev": {
+                "title": "Custom System Development",
+                "description": "Bespoke architectural solutions designed to meet your specific business requirements."
+            },
+            "integration": {
+                "title": "Enterprise Integration",
+                "description": "Seamlessly connect your existing systems and workflows for unified operations."
+            },
+            "security": {
+                "title": "Security Architecture",
+                "description": "Enterprise-grade protection for your critical data and system infrastructure."
+            },
+            "automation": {
+                "title": "Process Automation",
+                "description": "Intelligent workflow automation to streamline operations and reduce manual tasks."
+            },
+            "analytics": {
+                "title": "Data Analytics",
+                "description": "Advanced insights and dashboards for data-driven decision making."
+            },
+            "cloud": {
+                "title": "Cloud Solutions",
+                "description": "Scalable and secure cloud infrastructure for modern business needs."
+            }
+        }
+    },
+    "stats": {
+        "organizations": "Organizations Served",
+        "systems": "Systems Implemented",
+        "uptime": "System Uptime",
+        "countries": "Countries Served"
+    },
+    "testimonials": {
+        "title": "Trusted by Industry Leaders",
+        "description": "See what our clients say about their experience with Kairos.",
+        "items": [
+            {
+                "quote": "Kairos implemented a comprehensive digital information system that transformed our operations. The custom solution perfectly matches our workflow and has significantly improved our efficiency.",
+                "author": "Sarah Johnson",
+                "role": "CTO, TechCorp"
+            },
+            {
+                "quote": "The security architecture they designed is exceptional. We are confident knowing our critical data is protected by enterprise-grade security measures.",
+                "author": "Michael Chen",
+                "role": "Security Director, FinanceHub"
+            },
+            {
+                "quote": "System integration was seamless. They connected all our existing enterprise software in a matter of weeks. The implementation was smooth and the ROI immediate.",
+                "author": "Emily Rodriguez",
+                "role": "Operations Manager, GlobalInc"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Transform Your Organization?",
+        "description": "Join hundreds of organizations already using Kairos to implement comprehensive digital information systems.",
+        "startFree": "Start for Free",
+        "scheduleDemo": "Schedule Demo"
+    },
+    "footer": {
+        "description": "Empowering organizations through the implementation of comprehensive digital information systems.",
+        "newsletter": "Newsletter",
+        "emailPlaceholder": "Your email",
+        "products": "Products",
+        "allProducts": "All Products",
+        "company": "Company",
+        "aboutUs": "About Us",
+        "caseStudies": "Case Studies",
+        "careers": "Careers",
+        "resources": "Resources",
+        "webinars": "Webinars",
+        "community": "Community",
+        "address": "Address",
+        "phone": "Phone",
+        "email": "Email",
+        "allRightsReserved": "All rights reserved."
+    },
+    "aiKnowledge": {
+        "eyebrow": "KAIROS SOLUTIONS",
+        "title": "Transform your organization with",
+        "titleHighlight": "digital systems",
+        "titleEnd": "tailored to your needs",
+        "legacy": "LEGACY",
+        "legacyDesc": "Current Systems & Infrastructure",
+        "digital": "DIGITAL",
+        "digitalDesc": "Modern Information Systems",
+        "cardTitle": "Your digital transformation",
+        "cardTitleHighlight": "starts here",
+        "cardDescription": "We design and implement comprehensive digital information systems that transform how your organization manages data, processes, and workflows. Our solutions are tailored to your specific needs.",
+        "feature1": "Custom System Architecture",
+        "feature2": "Enterprise Integration",
+        "feature3": "Scalable Infrastructure",
+        "learnMore": "Learn more about our solutions"
+    },
+    "methodology": {
+        "eyebrow": "OUR PROCESS",
+        "title": "PROJECT MANAGEMENT",
+        "titleHighlight": "METHODOLOGY",
+        "description": "A structured and adaptable approach to ensure the success of your digital initiatives, regardless of their size.",
+        "phases": [
+            {
+                "id": "phase-1",
+                "title": "PHASE 1 - STARTUP",
+                "objective": "Ensuring we launch the right project with the right people",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Understand the context",
+                            "details": [
+                                "Why this project now?",
+                                "What problems does it solve?",
+                                "What's happening in and around the company that could influence the project?"
+                            ]
+                        },
+                        {
+                            "title": "Identify stakeholders",
+                            "details": [
+                                "Who will use the results?",
+                                "Who can block or help?",
+                                "Who decides and who finances?"
+                            ]
+                        },
+                        {
+                            "title": "Define clear objectives (SMART)",
+                            "details": [
+                                "Specific, Measurable, Achievable, Realistic, Time-bound.",
+                                "Ex: 'Reduce delays by 30% by Dec 2026' vs 'Improve deliveries'."
+                            ]
+                        },
+                        {
+                            "title": "Check feasibility & risks",
+                            "details": [
+                                "Do we have the skills, budget, time?",
+                                "Do the technologies exist?",
+                                "What could cause the project to fail?"
+                            ]
+                        },
+                        {
+                            "title": "Create project charter (1-2 pages)",
+                            "details": [
+                                "Sponsor, estimated budget, scope, desired end date."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Signed project charter",
+                        "Stakeholder list",
+                        "Validated feasibility study"
+                    ],
+                    "decision": "The sponsor + department management",
+                    "whatToDo": "What needs to be done"
+                }
+            },
+            {
+                "id": "phase-2",
+                "title": "PHASE 2 - PLANNING",
+                "objective": "Define how to carry out the project without drowning in details",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Build the team & clarify roles (RACI)",
+                            "details": [
+                                "R = Responsible",
+                                "A = Accountable",
+                                "C = Consulted",
+                                "I = Informed"
+                            ]
+                        },
+                        {
+                            "title": "Break down the project",
+                            "details": [
+                                "Divide into steps or work packages.",
+                                "Identify dependencies and set major milestones."
+                            ]
+                        },
+                        {
+                            "title": "Estimate needs & measure success",
+                            "details": [
+                                "Budget, people, equipment.",
+                                "Define 3 to 5 Key Performance Indicators (KPIs)."
+                            ]
+                        },
+                        {
+                            "title": "Organize communication & manage changes",
+                            "details": [
+                                "Who informs whom, when and how?",
+                                "Validation process for changes (cost, delay, quality)."
+                            ]
+                        },
+                        {
+                            "title": "Set up governance",
+                            "details": [
+                                "Steering Committee (Sponsor, Directors): Monthly/Bi-monthly.",
+                                "Team Meeting: Weekly."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Detailed schedule",
+                        "Detailed budget",
+                        "RACI matrix",
+                        "Dashboard",
+                        "Communication plan"
+                    ],
+                    "decision": "Steering Committee or sponsor",
+                    "whatToDo": "What needs to be done"
+                }
+            },
+            {
+                "id": "phase-3",
+                "title": "PHASE 3 - EXECUTION",
+                "objective": "Produce results while maintaining control",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Work in short stages",
+                            "details": [
+                                "2-4 week cycles.",
+                                "Produce concrete results and validate regularly with users."
+                            ]
+                        },
+                        {
+                            "title": "Track indicators (KPIs)",
+                            "details": [
+                                "Weekly verification.",
+                                "🟢 Green (OK), 🟠 Orange (Risk), 🔴 Red (Immediate Action)."
+                            ]
+                        },
+                        {
+                            "title": "Manage issues & conflicts",
+                            "details": [
+                                "Communicate transparently.",
+                                "Escalation: Project Manager (48h) → Sponsor (1 week) → Copil (2 weeks)."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Product/service as planned",
+                        "Meeting minutes",
+                        "Updated dashboards"
+                    ],
+                    "decision": "Regular check-points",
+                    "whatToDo": "What needs to be done"
+                }
+            },
+            {
+                "id": "phase-4",
+                "title": "PHASE 4 - FINALIZATION",
+                "objective": "Finish cleanly and transfer to users",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Validate & Train",
+                            "details": [
+                                "Tests with real users.",
+                                "Training and simple documentation."
+                            ]
+                        },
+                        {
+                            "title": "Deploy & Transfer",
+                            "details": [
+                                "Progressive deployment (pilot then general).",
+                                "Formal handover to operations/maintenance."
+                            ]
+                        },
+                        {
+                            "title": "Celebrate",
+                            "details": [
+                                "Recognize the team's work and close the project."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Signed acceptance",
+                        "User & technical doc",
+                        "Transfer certificate"
+                    ],
+                    "decision": "Sponsor + User representative",
+                    "whatToDo": "What needs to be done"
+                }
+            },
+            {
+                "id": "phase-5",
+                "title": "PHASE 5 - CAPITALIZATION",
+                "objective": "Learn from experience and measure value",
+                "content": {
+                    "steps": [
+                        {
+                            "title": "Post-project review",
+                            "details": [
+                                "What worked well/badly?",
+                                "What lessons for the future?"
+                            ]
+                        },
+                        {
+                            "title": "Measure benefits & Archive",
+                            "details": [
+                                "Real ROI vs predicted (3-6 months later).",
+                                "Archive charter, final schedule, budget."
+                            ]
+                        }
+                    ],
+                    "deliverables": [
+                        "Closure report",
+                        "Lessons learned sheet",
+                        "ROI measurement"
+                    ],
+                    "decision": "Administrative closure",
+                    "whatToDo": "What needs to be done"
+                }
+            }
+        ],
+        "glossaryTitle": "Glossary",
+        "glossarySubtitle": "A few key terms to clearly understand our methodology and speak the same language.",
+        "deliverablesTitle": "Deliverables",
+        "decisionTitle": "Who decides?",
+        "glossaryItems": [
+            {
+                "term": "Project Charter",
+                "def": "Short document (1-2 pages) that officializes the launch."
+            },
+            {
+                "term": "COPIL (Steering Committee)",
+                "def": "Decision-makers validating major orientations."
+            },
+            {
+                "term": "Milestone",
+                "def": "Important checkpoint to verify trajectory."
+            },
+            {
+                "term": "Deliverable",
+                "def": "Concrete result produced (doc, software, etc.)."
+            },
+            {
+                "term": "RACI Matrix",
+                "def": "Who does what (Responsible, Accountable, Consulted, Informed)."
+            },
+            {
+                "term": "Stakeholder",
+                "def": "Person/group impacted by or able to influence the project."
+            },
+            {
+                "term": "ROI",
+                "def": "Return on Investment (Gain vs Cost)."
+            },
+            {
+                "term": "Sponsor",
+                "def": "High-level person who carries and finances the project."
+            }
+        ]
+    }
+}

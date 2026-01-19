@@ -1,15 +1,20 @@
+"use client";
+
 import { TrendingUp, Users, FileText, Shield } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export function StatsSection() {
+  const { t } = useTranslation();
+
   const stats = [
-    { icon: Users, value: "2,000+", label: "Organizations Served", color: "from-blue-500 to-cyan-500" },
-    { icon: FileText, value: "500+", label: "Systems Implemented", color: "from-cyan-500 to-sky-500" },
-    { icon: Shield, value: "99.9%", label: "System Uptime", color: "from-sky-500 to-blue-500" },
-    { icon: TrendingUp, value: "150+", label: "Countries Served", color: "from-blue-500 to-indigo-500" },
+    { icon: Users, value: "2,000+", labelKey: "stats.organizations", color: "from-blue-500 to-cyan-500" },
+    { icon: FileText, value: "500+", labelKey: "stats.systems", color: "from-cyan-500 to-sky-500" },
+    { icon: Shield, value: "99.9%", labelKey: "stats.uptime", color: "from-sky-500 to-blue-500" },
+    { icon: TrendingUp, value: "150+", labelKey: "stats.countries", color: "from-blue-500 to-indigo-500" },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-blue-50/30 dark:from-[#18181b] dark:to-[#1a1f35]">
+    <section className="py-20 bg-white dark:bg-[#0f172a]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -25,7 +30,7 @@ export function StatsSection() {
               <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
                 {stat.value}
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">{stat.label}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">{t(stat.labelKey)}</p>
             </div>
           ))}
         </div>
@@ -33,4 +38,3 @@ export function StatsSection() {
     </section>
   );
 }
-
