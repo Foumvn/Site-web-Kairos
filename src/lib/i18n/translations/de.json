@@ -3,6 +3,10 @@
         "title": "Kairos - Digitale Lösungen für Exzellenz",
         "description": "Kairos entwirft und implementiert umfassende digitale Informationssysteme zur Transformation Ihrer Organisation."
     },
+    "common": {
+        "prev": "Zurück",
+        "next": "Weiter"
+    },
     "header": {
         "products": "Produkte",
         "services": "Dienstleistungen",
@@ -61,7 +65,57 @@
     },
     "testimonials": {
         "title": "Vertrauen von Branchenführern",
-        "description": "Erfahren Sie, was unsere Kunden über ihre Erfahrungen mit Kairos sagen."
+        "description": "Erfahren Sie, was unsere Kunden über ihre Erfahrungen mit Kairos sagen.",
+        "chosenByInnovators": "Gewählt von Innovatoren",
+        "startupsToGiants": "Von Start-ups bis zu Branchenriesen",
+        "items": [
+            {
+                "quote": "Kairos hat ein umfassendes digitales Informationssystem implementiert, das unsere Abläufe transformiert hat. Die maßgeschneiderte Lösung passt perfekt zu unserem Workflow und hat unsere Effizienz erheblich verbessert.",
+                "author": "Sarah Johnson",
+                "role": "CTO, TechCorp"
+            },
+            {
+                "quote": "Die von ihnen entworfene Sicherheitsarchitektur ist außergewöhnlich. Wir sind zuversichtlich, da wir wissen, dass unsere kritischen Daten durch Sicherheitsmaßnahmen auf Unternehmensebene geschützt sind.",
+                "author": "Michael Chen",
+                "role": "Sicherheitsdirektor, FinanceHub"
+            },
+            {
+                "quote": "Die Systemintegration verlief nahtlos. Sie haben unsere gesamte bestehende Unternehmenssoftware in wenigen Wochen miteinander verbunden. Die Implementierung war reibungslos und der ROI sofort spürbar.",
+                "author": "Emily Rodriguez",
+                "role": "Operations Manager, GlobalInc"
+            },
+            {
+                "quote": "Die Flexibilität der Plattform ermöglichte es uns, schnell und ohne größere technische Hürden zu skalieren.",
+                "author": "David Müller",
+                "role": "CEO, StartupX"
+            }
+        ],
+        "logos": [
+            {
+                "src": "https://logo.clearbit.com/google.com",
+                "alt": "Google"
+            },
+            {
+                "src": "https://logo.clearbit.com/stripe.com",
+                "alt": "Stripe"
+            },
+            {
+                "src": "https://logo.clearbit.com/airbnb.com",
+                "alt": "Airbnb"
+            },
+            {
+                "src": "https://logo.clearbit.com/microsoft.com",
+                "alt": "Microsoft"
+            },
+            {
+                "src": "https://logo.clearbit.com/apple.com",
+                "alt": "Apple"
+            },
+            {
+                "src": "https://logo.clearbit.com/amazon.com",
+                "alt": "Amazon"
+            }
+        ]
     },
     "cta": {
         "title": "Bereit, Ihre Organisation zu transformieren?",

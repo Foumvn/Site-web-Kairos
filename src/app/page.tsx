@@ -3,7 +3,7 @@ import { FeaturesSection } from "@/components/home/features-section";
 import { AIKnowledgeSection } from "@/components/home/ai-knowledge-section";
 import { HowItWorksSection } from "@/components/home/how-it-works-section";
 import { StatsSection } from "@/components/home/stats-section";
-import { TestimonialsSection } from "@/components/home/testimonials-section";
+import { Testimonial } from "@/components/home/testimonials-section";
 import { CTASection } from "@/components/home/cta-section";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -26,7 +26,7 @@ export default function Home() {
       </main>
 
       <StatsSection />
-      <TestimonialsSection />
+      <Testimonial />
       <CTASection />
 
       <SiteFooter variant="dark" />

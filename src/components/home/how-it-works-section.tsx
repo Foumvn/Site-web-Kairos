@@ -13,12 +13,6 @@ import {
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { useTranslation, useLanguage } from "@/lib/i18n";
 
 // Map icons to IDs
@@ -154,53 +148,22 @@ export function HowItWorksSection() {
                       <p className="text-primary font-medium">{phase.objective}</p>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-                      {/* Left: Steps */}
-                      <div className="space-y-6">
-                        <h4 className="font-bold text-sm uppercase tracking-wider text-gray-500 mb-4 flex items-center gap-2">
+                    <div className="grid grid-cols-1 gap-8">
+                      {/* Steps List */}
+                      <div className="space-y-4">
+                        <h4 className="font-bold text-sm uppercase tracking-wider text-gray-500 mb-6 flex items-center gap-2">
                           <Target className="w-4 h-4" /> {phase.content.whatToDo || t("methodology.whatToDo")}
                         </h4>
-                        <Accordion type="single" collapsible className="w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {phase.content.steps.map((step: any, stepIdx: number) => (
-                            <AccordionItem key={stepIdx} value={`item-${stepIdx}`} className="border-b-0 mb-3">
-                              <AccordionTrigger className="hover:no-underline py-4 px-5 bg-gray-50 hover:bg-white hover:shadow-md rounded-xl text-sm font-semibold text-gray-800 transition-all border border-transparent hover:border-gray-100 data-[state=open]:bg-primary/5 data-[state=open]:text-primary text-left">
-                                {step.title}
-                              </AccordionTrigger>
-                              <AccordionContent className="pt-2 px-5 pb-4 text-gray-600 bg-white rounded-b-xl text-sm leading-relaxed">
-                                <ul className="list-disc list-inside space-y-2 mt-2 marker:text-primary">
-                                  {step.details.map((d: string, i: number) => (
-                                    <li key={i}>{d}</li>
-                                  ))}
-                                </ul>
-                              </AccordionContent>
-                            </AccordionItem>
+                            <div
+                              key={stepIdx}
+                              className="py-4 px-6 bg-gray-50 rounded-2xl text-sm font-semibold text-gray-800 border border-transparent shadow-sm flex items-center gap-3"
+                            >
+                              <div className="w-2 h-2 rounded-full bg-primary" />
+                              {step.title}
+                            </div>
                           ))}
-                        </Accordion>
-                      </div>
-
-                      {/* Right: Deliverables & Decision */}
-                      <div className="flex flex-col gap-6">
-                        <div className="bg-slate-50/80 backdrop-blur rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                          <h4 className="font-bold text-sm uppercase tracking-wider text-gray-500 mb-4 flex items-center gap-2">
-                            <CheckCircle2 className="w-4 h-4" /> {t("methodology.deliverablesTitle")}
-                          </h4>
-                          <ul className="space-y-3">
-                            {phase.content.deliverables.map((item: string, i: number) => (
-                              <li key={i} className="flex items-start gap-3 text-sm text-gray-700">
-                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-500 shrink-0 shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
-                                {item}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        <div className="bg-gradient-to-br from-blue-50 to-indigo-50/50 rounded-2xl p-6 border border-blue-100">
-                          <h4 className="font-bold text-sm uppercase tracking-wider text-blue-800/60 mb-2 flex items-center gap-2">
-                            <Users className="w-4 h-4" /> {t("methodology.decisionTitle")}
-                          </h4>
-                          <p className="text-blue-900 font-medium text-sm">
-                            {phase.content.decision}
-                          </p>
                         </div>
                       </div>
                     </div>

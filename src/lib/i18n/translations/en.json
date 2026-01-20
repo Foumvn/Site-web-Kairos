@@ -3,6 +3,10 @@
         "title": "Kairos - Digital Information Systems",
         "description": "Kairos — Implementation and creation of digital information systems for enterprises and organizations."
     },
+    "common": {
+        "prev": "Previous",
+        "next": "Next"
+    },
     "header": {
         "products": "Products",
         "services": "Services",
@@ -62,6 +66,8 @@
     "testimonials": {
         "title": "Trusted by Industry Leaders",
         "description": "See what our clients say about their experience with Kairos.",
+        "chosenByInnovators": "Chosen by Innovators",
+        "startupsToGiants": "From startups to industry giants",
         "items": [
             {
                 "quote": "Kairos implemented a comprehensive digital information system that transformed our operations. The custom solution perfectly matches our workflow and has significantly improved our efficiency.",
@@ -77,6 +83,52 @@
                 "quote": "System integration was seamless. They connected all our existing enterprise software in a matter of weeks. The implementation was smooth and the ROI immediate.",
                 "author": "Emily Rodriguez",
                 "role": "Operations Manager, GlobalInc"
+            },
+            {
+                "quote": "The platform's flexibility allowed us to scale quickly without major technical friction.",
+                "author": "David Müller",
+                "role": "CEO, StartupX"
+            },
+            {
+                "quote": "Extremely low latency is critical for our robotic solutions. Kairos is the only platform that meets our criteria.",
+                "author": "John Doe",
+                "role": "AI Engineer, Robotics Lab"
+            },
+            {
+                "quote": "Easy to deploy, robust and highly customizable. Exactly what we needed.",
+                "author": "Léa Seydoux",
+                "role": "Digital Director, LuxGroup"
+            },
+            {
+                "quote": "Technical support is responsive and updates are regular. A safe bet.",
+                "author": "Thomas Pesquet",
+                "role": "Innovation Manager, AeroSpace"
+            }
+        ],
+        "logos": [
+            {
+                "src": "https://logo.clearbit.com/google.com",
+                "alt": "Google"
+            },
+            {
+                "src": "https://logo.clearbit.com/stripe.com",
+                "alt": "Stripe"
+            },
+            {
+                "src": "https://logo.clearbit.com/airbnb.com",
+                "alt": "Airbnb"
+            },
+            {
+                "src": "https://logo.clearbit.com/microsoft.com",
+                "alt": "Microsoft"
+            },
+            {
+                "src": "https://logo.clearbit.com/apple.com",
+                "alt": "Apple"
+            },
+            {
+                "src": "https://logo.clearbit.com/amazon.com",
+                "alt": "Amazon"
             }
         ]
     },

@@ -3,6 +3,10 @@
         "title": "Kairos - Soluciones Digitales para la Excelencia",
         "description": "Kairos diseña e implementa sistemas de información digital completos para transformar su organización."
     },
+    "common": {
+        "prev": "Anterior",
+        "next": "Siguiente"
+    },
     "header": {
         "products": "Productos",
         "services": "Servicios",
@@ -60,8 +64,58 @@
         "countries": "Países Atendidos"
     },
     "testimonials": {
-        "title": "Confianza de Líderes de la Industri",
-        "description": "Vea lo que nuestros clientes dicen sobre su experiencia con Kairos."
+        "title": "Confianza de Líderes de la Industria",
+        "description": "Vea lo que nuestros clientes dicen sobre su experiencia con Kairos.",
+        "chosenByInnovators": "Elegido por innovadores",
+        "startupsToGiants": "Desde empresas emergentes hasta gigantes de la industria",
+        "items": [
+            {
+                "quote": "Kairos implementó un sistema de información digital integral que transformó nuestras operaciones. La solución a medida se adapta perfectamente a nuestro flujo de trabajo y ha mejorado significativamente nuestra eficiencia.",
+                "author": "Sarah Johnson",
+                "role": "CTO, TechCorp"
+            },
+            {
+                "quote": "La arquitectura de seguridad que diseñaron es excepcional. Estamos seguros sabiendo que nuestros datos críticos están protegidos por medidas de seguridad de nivel empresarial.",
+                "author": "Michael Chen",
+                "role": "Director de Seguridad, FinanceHub"
+            },
+            {
+                "quote": "La integración del sistema fue perfecta. Conectaron todo nuestro software empresarial existente en cuestión de semanas. La implementación fue fluida y el ROI inmediato.",
+                "author": "Emily Rodriguez",
+                "role": "Gerente de Operaciones, GlobalInc"
+            },
+            {
+                "quote": "La flexibilidad de la plataforma nos permitió escalar rápidamente sin fricciones técnicas importantes.",
+                "author": "David Müller",
+                "role": "CEO, StartupX"
+            }
+        ],
+        "logos": [
+            {
+                "src": "https://logo.clearbit.com/google.com",
+                "alt": "Google"
+            },
+            {
+                "src": "https://logo.clearbit.com/stripe.com",
+                "alt": "Stripe"
+            },
+            {
+                "src": "https://logo.clearbit.com/airbnb.com",
+                "alt": "Airbnb"
+            },
+            {
+                "src": "https://logo.clearbit.com/microsoft.com",
+                "alt": "Microsoft"
+            },
+            {
+                "src": "https://logo.clearbit.com/apple.com",
+                "alt": "Apple"
+            },
+            {
+                "src": "https://logo.clearbit.com/amazon.com",
+                "alt": "Amazon"
+            }
+        ]
     },
     "cta": {
         "title": "¿Listo para Transformar su Organización?",

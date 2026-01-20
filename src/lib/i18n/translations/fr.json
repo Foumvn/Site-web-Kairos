@@ -3,6 +3,10 @@
         "title": "Kairos - Systèmes d'Information Numériques",
         "description": "Kairos — Mise en œuvre et création de systèmes d'information numériques pour les entreprises."
     },
+    "common": {
+        "prev": "Précédent",
+        "next": "Suivant"
+    },
     "header": {
         "products": "Produits",
         "services": "Services",
@@ -62,6 +66,8 @@
     "testimonials": {
         "title": "Confiance de Leaders de l'Industrie",
         "description": "Découvrez ce que nos clients disent de leur expérience avec Kairos.",
+        "chosenByInnovators": "Choisi par les innovateurs",
+        "startupsToGiants": "Des start-ups aux géants de l'industrie",
         "items": [
             {
                 "quote": "Kairos a mis en place un système d'information numérique complet qui a transformé nos opérations. La solution sur mesure correspond parfaitement à notre flux de travail et a considérablement amélioré notre efficacité.",
@@ -77,6 +83,52 @@
                 "quote": "L'intégration des systèmes a été transparente. Ils ont connecté tous nos logiciels d'entreprise existants en quelques semaines. La mise en œuvre a été fluide et le retour sur investissement immédiat.",
                 "author": "Emily Rodriguez",
                 "role": "Responsable Opérations, GlobalInc"
+            },
+            {
+                "quote": "La flexibilité de la plateforme nous a permis d'évoluer rapidement sans friction technique majeure.",
+                "author": "David Müller",
+                "role": "CEO, StartupX"
+            },
+            {
+                "quote": "La latence extrêmement faible est vitale pour nos solutions robotiques. Kairos est la seule plateforme qui répond à nos critères.",
+                "author": "Jean Jaurès",
+                "role": "Ingénieur IA, Robotics Lab"
+            },
+            {
+                "quote": "Facile à déployer, robuste et extrêmement personnalisable. Exactement ce dont nous avions besoin.",
+                "author": "Léa Seydoux",
+                "role": "Directrice Digitale, LuxGroup"
+            },
+            {
+                "quote": "Le support technique est réactif et les mises à jour sont régulières. Une valeur sûre.",
+                "author": "Thomas Pesquet",
+                "role": "Innovation Manager, AeroSpace"
+            }
+        ],
+        "logos": [
+            {
+                "src": "https://logo.clearbit.com/google.com",
+                "alt": "Google"
+            },
+            {
+                "src": "https://logo.clearbit.com/stripe.com",
+                "alt": "Stripe"
+            },
+            {
+                "src": "https://logo.clearbit.com/airbnb.com",
+                "alt": "Airbnb"
+            },
+            {
+                "src": "https://logo.clearbit.com/microsoft.com",
+                "alt": "Microsoft"
+            },
+            {
+                "src": "https://logo.clearbit.com/apple.com",
+                "alt": "Apple"
+            },
+            {
+                "src": "https://logo.clearbit.com/amazon.com",
+                "alt": "Amazon"
             }
         ]
     },
@@ -106,8 +158,8 @@
     },
     "aiKnowledge": {
         "eyebrow": "SOLUTIONS KAIROS",
-        "title": "Transformez votre organisation avec",
-        "titleHighlight": "des systèmes numériques",
+        "title": "Transformez votre organisation avec des systèmes numériques",
+        "titleHighlight": "",
         "titleEnd": "adaptés à vos besoins",
         "legacy": "EXISTANT",
         "legacyDesc": "Systèmes & Infra Actuels",
